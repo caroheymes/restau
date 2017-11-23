@@ -91,6 +91,8 @@ GEM
     nio4r (2.1.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
+    non-stupid-digest-assets (1.0.9)
+      sprockets (>= 2.0)
     orm_adapter (0.5.0)
     pg (0.21.0)
     pry (0.11.3)
@@ -122,6 +124,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails-uikit-sass (2.27.2)
+      non-stupid-digest-assets (~> 1.0)
+      sass-rails (~> 5.0)
     railties (5.0.5)
       actionpack (= 5.0.5)
       activesupport (= 5.0.5)
@@ -169,6 +174,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    uikit-sass-rails (1.4.1)
+      sass-rails (>= 3.1)
     warden (1.2.7)
       rack (>= 1.0)
     web-console (3.5.1)
@@ -197,12 +204,14 @@ DEPENDENCIES
   pry-rails
   puma
   rails (= 5.0.5)
+  rails-uikit-sass
   redis
   sass-rails
   simple_form
   spring
   spring-watcher-listen (~> 2.0.0)
   uglifier
+  uikit-sass-rails
   web-console (>= 3.3.0)
 
 RUBY VERSION

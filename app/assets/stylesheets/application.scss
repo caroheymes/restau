@@ -6,8 +6,12 @@
 // External libraries
 @import "bootstrap-sprockets";
 @import "bootstrap";
+//@import "rails-uikit-sass";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+//@import "uikit-mixins";
+//@import "my-custom-variables-and-hooks";
+//@import "uikit";
 
 // Your CSS partials
 @import "layouts/index";
