@@ -3,39 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>La grande bouffe (Marco Ferreri - 1973)</title>
+    <title>Grande bouffe</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
   <body>
-    
-        <div class="container center">
-        <div class="col-xs-8 col-md-10">
-            <div class="tabs center">
-                  <a class="tab active" href="#">
-                    <div><i class="fa fa-heart" aria-hidden="true"></i></div>
-                    <p>Pour la famille</p>
-                  </a>
-                  <a class="tab" href="#">
-                    <h3><i class="fa fa-heart" aria-hidden="true"></i></h3>
-                    <p>Pour les potes</p>
-                  </a>
-                  <a class="tab" href="#">
-                    <h3><i class="fa fa-glass" aria-hidden="true"></i></h3>
-                    <p>Pour les autres</p>
-                  </a>
-                  <a class="tab" href="#">
-                    <h3><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h3>
-                    <p>Pour celui qui fait le planning d'épreuves validantes </p>
-                  </a>
-            </div>
-        </div>
-    </div>
-    <!--< %= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-    
-    
     <%= yield %>
     <%= javascript_include_tag 'application' %>
   </body>
