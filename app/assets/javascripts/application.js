@@ -3,7 +3,7 @@
 //= require bootstrap-sprockets
 //= require uikit-icons.min.js
 //= require uikit.min.js
-//= require cloudinary
+//= require cloudinary-jquery.js
 //= require_tree .
 $(document).ready(function(){
     $('.video').hide();
