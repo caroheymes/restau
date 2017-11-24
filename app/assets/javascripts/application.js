@@ -6,7 +6,7 @@
 //= require cloudinary-jquery.js
 //= require_tree .
 $(document).ready(function(){
-    $('.video').hide();
+    $('.videos').hide();
     
     $('#family').click(function(){
         $('#family-video').fadeToggle();
@@ -29,6 +29,11 @@ $(document).ready(function(){
         $('#friends-video').hide();
     });
      $('#war').click(function(){
+        //$('#Blood_Toil_Tears_and_Sweat_uzbbk1').get(0).play().;
+        //$('#war-video').click(function() {
+        //this.paused ? this.play() : this.pause();
+        //$('#war-video').get(0).play().;
+    //});
         $('#war-video').fadeToggle();
         $('#wedding-video').hide();
         $('#family-video').hide();
