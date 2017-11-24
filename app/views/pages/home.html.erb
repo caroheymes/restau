@@ -1,31 +1,71 @@
  <div class="container center">
-        <div class="col-xs-8 col-md-10">
-            <div class="tabs center uk-accordion-title">
-                  <a class="tab active" href="#">
-                    <div><i class="fa fa-heart" aria-hidden="true"></i></div>
-                    <p>Pour la famille</p>
-                  </a>
-                    
-                  <a class="tab" href="#">
-                    <h3><i class="fa fa-heart" aria-hidden="true"></i></h3>
-                    <p>Pour les potes</p>
-                  </a>
-
-                  <a class="tab" href="#">
-                    <h3><i class="fa fa-glass" aria-hidden="true"></i></h3>
-                    <p>Pour les autres</p>
-                  </a>
-                  <a class="tab" href="#">
-                    <h3><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h3>
-                    <p>Pour celui qui fait le planning d'épreuves validantes </p>
-                  </a>
+        <div class="col-xs-8 col-md-10 uk-animation-toggle sized">
+            <div class="row text-center uk-card uk-card-default uk-card-body uk-animation-scale-up">
+              <h3>Y'en a pour tous les goûts !</h3>
             </div>
+            
+            <div class="row">
+                <div class="tabs center">
+                    <a class="tab active" id="family" href="#">
+                      <div><i class="fa fa-heart" aria-hidden="true"></i></div>
+                      <p>Pour la famille</p>
+                    </a>
+                      
+                    <a class="tab" id="friends" href="#">
+                      <h3><i class="fa fa-beer" aria-hidden="true"></i></h3>
+                      <p>Pour les potes</p>
+                    </a>
+  
+                    <a class="tab" id="wedding" href="#">
+                      <h3><i class="fa fa-glass" aria-hidden="true"></i></h3>
+                      <p>pleurer un coup</p>
+                    </a>
+                    <a class="tab" id="war" href="#">
+                      <h3><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h3>
+                      <p>Pour ceux qui font le planning d'épreuves validantes </p>
+                    </a>
+              </div>
+              
+            </div>
+              
+              
+
         </div>
+         <div class="col-xs-8 col-md-10">
+      <div class="video" id="family-video">
+         <%= cl_video_tag("je-te-promets_xsxe0h", :transformation=>[
+    { :width=>450, :crop=>"scale"},
+    {:gravity=>"center", :overlay=>"Play-Music-icon_sqgdve", :opacity=>80, :width=>121, :crop=>"scale"}
+    ]) %>
+      </div>
+      
+      <div class="video" id="friends-video">
+         <%= cl_video_tag("Tu_peux_compter_sur_moi_tlcj03", :transformation=>[
+    {:width=>450, :crop=>"scale"},
+    {:gravity=>"center", :overlay=>"Play-Music-icon_sqgdve", :opacity=>80, :width=>121, :crop=>"scale"}
+    ]) %>
+      </div>
+      
+      <div class="video" id="wedding-video">
+         <%= cl_video_tag("poeme_de_W.H_Auden_f4wici", :transformation=>[
+    {:width=>450, :crop=>"scale"},
+    {:gravity=>"center", :overlay=>"Play-Music-icon_sqgdve", :opacity=>80, :width=>121, :crop=>"scale"}
+    ]) %>
+      </div>
+      
+      <div class="video" id="war-video">
+         <%= cl_video_tag("Blood_Toil_Tears_and_Sweat_uzbbk1", :transformation=>[
+    {:width=>450, :crop=>"scale"},
+    {:gravity=>"center", :overlay=>"Play-Music-icon_sqgdve", :opacity=>80, :width=>121, :crop=>"scale"}
+    ]) %>
+      </div>
+    </div>
     </div>
     
-    <div>
-       <%= cl_video_tag("je-te-promets_xsxe0h", :width=>450, :crop=>"scale", :autoplay=>true, :loop => true) %>
-    </div>
+   
+    
+    
+
     
      
     
