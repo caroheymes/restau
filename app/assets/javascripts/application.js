@@ -34,4 +34,6 @@ $(document).ready(function(){
         $('#family-video').hide();
         $('#friends-video').hide();
     });
+    
+    
 });
