@@ -10,7 +10,7 @@ $(document).ready(function(){
     
     $('#family').click(function(){
         $('#family-video').fadeToggle();
-        $.cloudinary.videoTag("je-te-promets_xsxe0h", {autoplay: true});
+        //$.cl_videoTag("je-te-promets_xsxe0h", {autoplay: true}).transformation().toHtml());
         $('#friends-video').hide();
         $('#wedding-video').hide();
         $('#war-video').hide();
