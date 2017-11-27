@@ -1,66 +1,88 @@
  <div class="container center">
         <div class="col-xs-8 col-md-10 uk-animation-toggle sized">
-            <div class="row text-center uk-card uk-card-default uk-card-body uk-animation-scale-up">
-              <h3>Y'en a pour tous les goûts !</h3>
-            </div>
             
             <div class="row">
                 <div class="tabs center">
-                    <a class="tab active" id="family" href="#">
-                      <div><i class="fa fa-heart" aria-hidden="true"></i></div>
-                      <p>Pour la famille</p>
+                    <a class="tab active" id="dtc">
+                       <p>#DTC</p>
                     </a>
                       
-                    <a class="tab" id="friends" href="#">
-                      <h3><i class="fa fa-beer" aria-hidden="true"></i></h3>
-                      <p>Pour les potes</p>
+                    <a class="tab" id="friends">
+                       <p>Patate chaude</p>
                     </a>
   
-                    <a class="tab" id="wedding" href="#">
-                      <h3><i class="fa fa-glass" aria-hidden="true"></i></h3>
-                      <p>pleurer un coup</p>
+                    <a class="tab" id="wedding">
+                        <p>Bienveillance ta gueule</p>
                     </a>
-                    <a class="tab" id="war" href="#">
-                      <h3><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h3>
-                      <p>Pour ceux qui font le planning d'épreuves validantes </p>
+                    <a class="tab" id="war">
+                      <p>War</p>
                     </a>
               </div>
+              
+
+  
+
+  
+              
+              
+            <div class="col-xs-8 col-md-10 text-center pad">
+                      <div class="videos" id="mapdtc"> <div><h3>Le trou du cul du monde est là, en vrai de vrai !</h3></div>
+                         <%= cl_video_tag("dtc_pmsj2f", :controls=> true, :transformation=>[ { :width=>600, :crop=>"scale", :effect=>"fade:2000",
+                  :effect=>"fade:-4000" } ])
+                         %>
+                      </div>
+          
+                      <div class="videos" id="friends-video">
+                         <%= cl_video_tag("dindes_vtvq7i",  :controls=> true, :transformation=>[
+                    {:width=>600, :crop=>"scale", :effect=>"fade:2000", :effect=>"fade:-4000" } ]) %>
+                      </div>
+          
+                      <div class="videos" id="wedding-video">
+                         <%= cl_video_tag("le_monde_est_beau_i7wqxx",  :controls=> true, :transformation=>[
+                    {:width=>600, :crop=>"scale", :effect=>"fade:2000", :effect=>"fade:-4000"}
+                    ]) %>
+                      </div>
+          
+                      <div class="videos" id="war-video">
+                         <%= cl_video_tag("Churchill_gf9pai", :controls=> true, :transformation=>[
+                    {:width=>600, :crop=>"scale", :effect=>"fade:2000", :effect=>"fade:-4000"}
+                    ]) %>
+                         
+                      </div>
+            </div>
+            <div id="map" ></div>
+
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_AgTEBtCpV4Y0kHj2lxWtsUqzk92jPXM"></script>
               
             </div>
               
               
 
         </div>
-         <div class="col-xs-8 col-md-10">
+         <!--<div class="col-xs-8 col-md-10 text-center pad">
       <div class="videos" id="family-video">
-         <%= cl_video_tag("je-te-promets_xsxe0h", :transformation=>[
-    { :width=>450, :crop=>"scale", :autoplay=> true},
-    {:gravity=>"center", :overlay=>"Play-Music-icon_sqgdve", :opacity=>80, :width=>121, :crop=>"scale"}
-    ]) %>
+         <%= cl_video_tag("je-te-promets_xsxe0h", :controls=> true, :transformation=>[ { :width=>880, :crop=>"scale" } ])
+         %>
       </div>
       
       <div class="videos" id="friends-video">
-         <%= cl_video_tag("Tu_peux_compter_sur_moi_tlcj03", :transformation=>[
-    {:width=>450, :crop=>"scale"},
-    {:gravity=>"center", :overlay=>"Play-Music-icon_sqgdve", :opacity=>80, :width=>121, :crop=>"scale"}
-    ]) %>
+         <%= cl_video_tag("Tu_peux_compter_sur_moi_tlcj03",  :controls=> true, :transformation=>[
+    {:width=>450, :crop=>"scale"} ]) %>
       </div>
       
       <div class="videos" id="wedding-video">
-         <%= cl_video_tag("poeme_de_W.H_Auden_f4wici", :transformation=>[
-    {:width=>450, :crop=>"scale"},
-    {:gravity=>"center", :overlay=>"Play-Music-icon_sqgdve", :opacity=>80, :width=>121, :crop=>"scale"}
+         <%= cl_video_tag("4_mariages_et_un_enterrement_-_extrait_W._H._Auden_Funeral_blues_utvwuk",  :controls=> true, :transformation=>[
+    {:width=>450, :crop=>"scale"}
     ]) %>
       </div>
       
       <div class="videos" id="war-video">
-         <%= cl_video_tag("Blood_Toil_Tears_and_Sweat_uzbbk1", :transformation=>[
-    {:width=>450, :crop=>"scale"},
-    {:gravity=>"center", :overlay=>"Play-Music-icon_sqgdve", :opacity=>80, :width=>121, :crop=>"scale"}
+         <%= cl_video_tag("Winston_Churchill_k8rhnt", :controls=> true, :transformation=>[
+    {:width=>450, :crop=>"scale"}
     ]) %>
          
       </div>
-    </div>
+    </div> -->
     </div>
     
    

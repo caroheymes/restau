@@ -1,7 +1,7 @@
 .center{
     margin : 0 auto;
     width: 960px;
-    background: light-gray;
+    background: #f9f9f9;
 }
 
 .sized{
@@ -37,21 +37,39 @@
   padding: 20px 0;
 }
 .tab:first-child {
-
+ border-radius: 10px 0 0 0;
 }
 .tab:last-child {
-
+ border-radius: 0 10px 0 0;
 }
 .tab.active {
-  background: white;
+  background: #e4d1cc;
   color: black;
 }
 
-.tab.active i{
+.tab i{
     color: #e4d1cc;
 }
+
+.tab i .active {
+    color: white;
+}
 .video{
+  
   width: 450px;
   margin: 0 auto;
   text-align: center;
+}
+
+.pad{
+  margin : 50px auto;
+  width: 900px;
+  //background: linear-gradient(225deg, #e4d1cc, #b8cad0);
+ 
+}
+
+#map{
+  width: 98%;
+  height: 500px;
+  margin : 50px auto;
 }
