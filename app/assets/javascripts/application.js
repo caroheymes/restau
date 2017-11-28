@@ -12,6 +12,9 @@ $(document).ready(function(){
         $('#map h3').show();
         $('#map').show();
         $('#mapdtc').show();
+        $('#mapdtc video').click(function(){
+        this.paused ? this.play() : this.pause()
+        });
         $('#friends-video').hide();
         $('#wedding-video').hide();
         $('#war-video').hide();
@@ -19,6 +22,9 @@ $(document).ready(function(){
     });
     $('#friends').click(function(){
         $('#friends-video').show();
+        $('#friends-video video').click(function(){
+        this.paused ? this.play() : this.pause()
+        });
         $('#mapdtc').hide();
         $('#map').hide();
         $('#wedding-video').hide();
@@ -27,6 +33,9 @@ $(document).ready(function(){
     });
     $('#wedding').click(function(){
         $('#wedding-video').show();
+        $('#wedding-video video').click(function(){
+        this.paused ? this.play() : this.pause()
+        });
         $('#map').hide();
         $('#mapdtc').hide();
         $('#war-video').hide();
@@ -36,7 +45,10 @@ $(document).ready(function(){
      $('#war').click(function(){
         $('#mapdtc').hide();
         $('#map').hide();
-        $('#war-video').fadeToggle();
+        $('#war-video').show();
+        $('#war-video video').click(function(){
+        this.paused ? this.play() : this.pause()
+        });
         $('#wedding-video').hide();
         $('#family-video').hide();
         $('#friends-video').hide();
