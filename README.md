@@ -1,2 +1,3 @@
 en ligne sur https://agapes.herokuapp.com/
-Les vidéos sont bien importées avec génération d'un overlay mais l'autoplay ne marche pas, ...
+carte google ok
+contrôle des videos ok
